@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lesson 02: Design Principles</title>
         <link rel="stylesheet" href="/styles/normalize.css" />
+        <link rel="stylesheet" href="/lesson2/style.css" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -13,10 +15,7 @@
             rel="stylesheet"
         />
         <script src="/scripts/script.js" defer></script>
-        <script
-            src="https://kit.fontawesome.com/3f3d54622e.js"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://kit.fontawesome.com/3f3d54622e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -24,28 +23,72 @@
             <h2>Nathan Atkinson</h2>
             <a href="/">Go home</a>
         </header>
-        <main>
+        <main class="main-grid">
             <section class="principle-section">
-                <article>
+                <div class="article-header">
                     <h2>Contrast</h2>
                     <h3>Digital Ocean</h3>
                     <a href="https://digitalocean.com" target="_blank">DigitalOcean.com</a>
-                    <img src="" alt="">
-                </article>
+                </div>
+                <div class="article-body">
+                    <img src="/lesson2/images/do-site.png" alt="Digital Ocean Home Page" />
+                    <p>
+                        The Digital Ocean home page shows great use of contrast. They not only chose a very bright blue that stands out against the white
+                        background, but they also make great use of large, bold font faces for headers that highlight reasons to use their platform. The blue on
+                        white immediately draws your eye, making for a very good contrast of each other. Then the slightly lighter gray paragraph text underneath
+                        each bright blue header creates a good contrast between the bright bold blue and the gray by putting the emphasis on the blue while still
+                        drawing your eye downward. This creates a nice hierarchy of font, size, weight, and color to lead you down the desired path of information
+                        gathering.
+                    </p>
+                </div>
             </section>
             <section class="principle-section">
-                <h2>White Space and Clean Design</h2>
-                <h3>Stripe</h3>
-                <a href="https://stripe.com" target="_blank">stripe.com</a>
-                <img src="" alt="">
+                <div class="article-header">
+                    <h2>White Space and Clean Design</h2>
+                    <h3>Stripe</h3>
+                    <a href="https://stripe.com" target="_blank">stripe.com</a>
+                </div>
+                <div class="article-body">
+                    <img src="/lesson2/images/stripe-site.png" alt="Stripe Home Page" />
+                    <p>
+                        The Stripe home page has always been a favorite of mine for good, clean design and excellent use of both white space and color. The way the
+                        morphing background abstract animation blends into white is a nice introduction to the brand and their tagline. Under all the eye-catching
+                        color is some very simple text and two buttons, followed by a few brands that are very well spaced out. There's lots of empty space in play
+                        here and it creates a clean space and makes it obvious what the next steps are for any site visitor.
+                    </p>
+                </div>
             </section>
             <section class="principle-section">
-                <h2>Hick's Law</h2>
-                <h3>Medium</h3>
-                <a href="https://medium.com" target="_blank">medium.com</a>
-                <img src="" alt="">
+                <div class="article-header">
+                    <h2>Hick's Law</h2>
+                    <h3>Medium</h3>
+                    <a href="https://medium.com" target="_blank">medium.com</a>
+                </div>
+                <div class="article-body">
+                    <img src="/lesson2/images/medium-site.png" alt="Medium Home Page" />
+                    <p>
+                        I think Medium exemplifies Hick's Law very well, especially on their mobile landing page. There's very little going on, but just enough to
+                        get you headed in the right direction. With only two buttons and a very simple home page feed of popular content, this home page gets you
+                        right into the content and focuses the call to action buttons on the mission of medium, get you to sign up and read articles. There's not
+                        much text or fancy design going on here, which is perfect for what this space needs to accomplish.
+                    </p>
+                </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-inner">
+                    <div class="footer-meta-wrapper">
+                        <span id="copyright"></span>
+                        <span id="name">Nathan Atkinson</span>
+                        <span id="location">Utah, USA</span>
+                    </div>
+                    <div class="last-updated" id="last-updated"></div>
+                    <div class="dark-button-wrapper">
+                        <button id="dark-mode"><i class="fa-regular fa-sun"></i> Turn the lights off</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
