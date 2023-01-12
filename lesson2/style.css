@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+    font-size: 10px;
+}
+:root {
+    --header-font: "Arvo", serif;
+    --main-font: "Open Sans", sans-serif;
+    --main-blue: #004ba8;
+    --main-green: #17301c;
+    --color-secondary: #f6d8ae;
+    --color-bg: #F0EFF4;
+    --font-color: #333;
+    --font-color-dark-bg: #fff;
+    --link-color: #3448b0;
+}
+body.dark-theme {
+    --main-blue: #004ba8;
+    --main-green: #17301c;
+    --color-secondary: #f6d8ae;
+    --color-bg: #252525;
+    --font-color: #fff;
+    --font-color-dark-bg: #fff;
+    --link-color: #4c6aff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font);
+    color: var(--font-color);
+}
+body {
+    font-family: var(--main-font);
+    background-color: var(--color-bg);
+}
+p,
+ul,
+li,
+span,
+a {
+    font-size: 1.6rem;
+}
+p, ul, li, span {
+    color: var(--font-color);
+}
+a {
+    color: var(--link-color);
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+main {
+    display: grid;
+}
