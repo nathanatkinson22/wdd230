@@ -70,7 +70,6 @@ footer {
     justify-content: center;
     padding: 1rem 2rem;
     background-color: var(--main-green);
-    border-radius: 150px ;
     text-align: center;
 }
 header h1,
@@ -125,11 +124,11 @@ header a {
     padding: 1.6rem 1.6rem 3.2rem 1.6rem;
     background-color: var(--main-blue);
     border-radius: 1rem 1rem 0 0;
-
 }
-.article-header h2, .article-header h3, .article-header a {
+.article-header h2,
+.article-header h3,
+.article-header a {
     color: var(--font-color-dark-bg);
-
 }
 .article-body {
     padding: 2rem;
@@ -160,6 +159,11 @@ header a {
     padding: 1rem 2rem;
 }
 @media only screen and (min-width: 45rem) {
+    header,
+    footer {
+        border-radius: 150px;
+    }
+
     .main-grid {
         grid-template-columns: 1fr 1fr;
     }
