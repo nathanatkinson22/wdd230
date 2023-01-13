@@ -153,6 +153,12 @@ header a {
 #dark-mode i {
     font-size: 1.4rem;
 }
+.footer-meta-wrapper {
+    padding: 1.6rem;
+}
+.footer-meta-wrapper span {
+    padding: 1rem 2rem;
+}
 @media only screen and (min-width: 45rem) {
     .main-grid {
         grid-template-columns: 1fr 1fr;
