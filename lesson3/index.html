@@ -1,26 +1,57 @@
-
-        "index.html" - this page contains:
-        an appropriate site name, e.g., Point of the Mountain Chamber,
-        the site purpose, and
-        a simple logo that you have created for your chamber of commerce site or that you have found under a creative commons license or by permission. - Help: Content and Development Resources
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafton Chamber of Commerce</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="target-audience.html">Target Audience</a></li>
-            <li><a href="design.html">Design</a></li>
-        </ul>
-    </nav>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grafton Chamber of Commerce</title>
+        <meta name="description" content="The official page for the Grafton, Utah Chamber of Commerce." />
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-wrapper">
+                <img src="/lesson3/images/grafton-logo.webp" alt="Grafton Chamber of Commerce Logo" class="logo-small">
+                <h1>Grafton Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="target-audience.html">Target Audience</a></li>
+                    <li><a href="design.html">Design</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Site Purpose</h2>
+                <p>
+                    The purpose of this site is to build and strengthen relationships among business owners, entrepreneurs, community-members, and patrons in
+                    the Grafton, Utah community. The site provides information for business owners and community members. The site also provides opportunities
+                    to connect with other local business owners, meeting schedules, and other relevant information.
+                </p>
+            </section>
+            <section>
+                <h2>Grafton Chamber of Commerce Logo</h2>
+                <img src="/lesson3/images/grafton-logo.webp" alt="Grafton Chamber of Commerce Logo" class="logo-med">
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-inner">
+                    <div class="footer-meta-wrapper">
+                        <span id="copyright"></span>
+                        <span id="name">Nathan Atkinson</span>
+                        <span id="location">Utah, USA</span>
+                    </div>
+                    <div class="last-updated" id="last-updated"></div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
