@@ -45,6 +45,7 @@ header {
     color: var(--font-color);
     padding-bottom: 2rem;
     display: flex;
+    flex-direction: column;
 }
 header h1 {
     padding: 1rem;
