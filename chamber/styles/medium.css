@@ -1,0 +1,68 @@
+@media screen and (min-width: 32.5rem) {
+    header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        flex: 1;
+    }
+    .header-wrapper {
+        flex-direction: row;
+    }
+    .navigation {
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.5rem 0.5rem 0 0;
+    }
+    .navigation.responsive {
+        background-color: rgba(150, 150, 150, 0.5);
+        height: 100%;
+        min-width: 15rem;
+    }
+    .navigation .menu-icon {
+        align-self: end;
+    }
+
+    .logo-wrapper {
+        flex-direction: row;
+    }
+    .header-lower {
+        width: 100%;
+    }
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-auto-columns: 1fr 1fr;
+        gap: 0.625rem;
+        grid-template-areas:
+            "hero hero hero"
+            "news news news"
+            "spotlight spotlight spotlight"
+            "join join join"
+            "event event weather";
+    }
+    .hero {
+        grid-area: hero;
+    }
+    .news {
+        grid-area: news;
+    }
+    .spotlight {
+        grid-area: spotlight;
+    }
+    .join {
+        grid-area: join;
+    }
+    .event {
+        grid-area: event;
+    }
+    .weather {
+        grid-area: weather;
+    }
+
+    .footer-meta-wrapper {
+        flex-wrap: wrap;
+    }
+}

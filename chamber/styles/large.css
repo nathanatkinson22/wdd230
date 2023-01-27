@@ -1,0 +1,77 @@
+@media screen and (min-width: 60rem) {
+    header {
+        flex-direction: column;
+    }
+    .logo-wrapper {
+        flex-direction: row;
+    }
+    .navigation {
+        flex-direction: row;
+        flex: 1 1 100%;
+        margin: 0;
+        position: relative;
+    }
+    .navigation .menu-icon {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+    }
+    .navigation li a {
+        padding: 1.5rem 2rem;
+    }
+    .header-lower {
+        justify-content: flex-end;
+    }
+    #header-date, .social-icons {
+        align-self: center;
+    }
+    .social-icons {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .main-grid {
+        max-width: 77.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "event hero hero spotlight"
+            "weather hero hero spotlight"
+            "join news news spotlight";
+    }
+    .hero {
+        grid-area: hero;
+    }
+    .news {
+        grid-area: news;
+    }
+    .spotlight {
+        grid-area: spotlight;
+    }
+    .join {
+        grid-area: join;
+    }
+    .event {
+        grid-area: event;
+    }
+    .weather {
+        grid-area: weather;
+    }
+    .footer-meta-wrapper {
+        flex-direction: row;
+    }
+    .footer-meta-wrapper span {
+        padding-right: 1rem;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .footer-meta-wrapper span::after {
+        content: '\25CF';
+        padding-left: 1rem;
+    }
+    .footer-meta-wrapper span:last-child::after {
+        content: '';
+    }
+}

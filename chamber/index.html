@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Grafton, Utah Chamber of Commerce Website" />
+        <title>Grafton Chamber of Commerce</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/medium.css" />
+        <link rel="stylesheet" href="styles/large.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Noto+Serif:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/3f3d54622e.js" crossorigin="anonymous"></script>
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <img src="images/grafton-logo.webp" alt="Grafton Chamber of Commerce Logo" class="logo-small" />
+                    <h1>Grafton Chamber of Commerce</h1>
+                </div>
+                <nav>
+                    <ul class="navigation">
+                        <li class="menu-icon" onclick="expandMenu(this)">
+                            <div class="menu-bar bar-one"></div>
+                            <div class="menu-bar bar-two"></div>
+                            <div class="menu-bar bar-three"></div>
+                        </li>
+                        <li><a href="#">Discovery</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-lower">
+                <span id="header-date"></span>
+                <span class="social-icons">
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class="main-grid">
+                <section class="hero home-grid-section">Hero</section>
+                <section class="news home-grid-section">News Release</section>
+                <section class="spotlight home-grid-section">Spotlight</section>
+                <section class="join home-grid-section">Join</section>
+                <section class="event home-grid-section">Event</section>
+                <section class="weather home-grid-section">Weather</section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-logo"><img src="images/grafton-logo.webp" alt="Grafton Chamber of Commerce Logo" class="logo-small" /></div>
+            <div class="footer-meta-wrapper">
+                <span id="copyright"></span>
+                <span>Grafton Chamber of Commerce</span>
+                <span id="name">Nathan Atkinson</span>
+                <span>WDD 230 Project</span>
+                <span class="last-updated" id="last-updated"></span>
+            </div>
+        </footer>
+    </body>
+</html>
