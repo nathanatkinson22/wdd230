@@ -177,9 +177,17 @@ main {
 }
 .home-grid-section {
     padding: 3rem;
-    margin: 1rem;
     text-align: center;
     border: 2px solid gray;
+}
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.spotlight-item {
+    border: 1px solid var(--secondary-color);
+    flex: 1;
 }
 footer {
     background-color: var(--main-color);
