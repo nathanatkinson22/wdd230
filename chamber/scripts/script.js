@@ -15,3 +15,9 @@ let updatedDate = new Date(document.lastModified).toLocaleDateString('en-us', { 
 
 dateFooter.innerHTML = `&copy; ${currentYear}`;
 lastUpdated.innerHTML = `Last Updated: ${updatedDate}`;
+
+let currentDate = new Date().getDay();
+const pageBanner = document.querySelector('.banner');
+if (currentDate == 1 || currentDate == 2) {
+    pageBanner.style.display = 'block';
+}

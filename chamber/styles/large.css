@@ -4,6 +4,7 @@
     }
     .logo-wrapper {
         flex-direction: row;
+        padding: 1rem 0 0 3rem;
     }
     .navigation {
         flex-direction: row;
@@ -28,7 +29,7 @@
     }
     .social-icons {
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 2rem; 
     }
     .main-grid {
         max-width: 77.5rem;
@@ -43,6 +44,15 @@
     }
     .hero {
         grid-area: hero;
+    }
+    .hero-text {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        text-align: right;
+    }
+    .hero-text h2 {
+        background-color: transparent;
     }
     .news {
         grid-area: news;
