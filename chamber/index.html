@@ -18,6 +18,7 @@
         />
         <script src="https://kit.fontawesome.com/3f3d54622e.js" crossorigin="anonymous"></script>
         <script src="scripts/script.js" defer></script>
+        <script src="scripts/windchill.js" defer></script>
     </head>
     <body>
         <header>
@@ -52,7 +53,13 @@
             <div class="banner"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
             <div class="main-grid">
                 <section class="hero home-grid-section">
-                    <img src="images/grafton-hero.webp" alt="City of Grafton">
+                    <picture>
+                        <source media="(min-width: 900px)" srcset="images/wdd230-org-large.webp">
+                        <source media="(min-width: 600px)" srcset="images/wdd230-org-medium.webp">
+                        <source media="(min-width: 300px)" srcset="images/wdd230-org-small.webp">
+                        <img src="images/wdd230-org.webp" alt="WDD 230 Sizing image">
+                    </picture>
+                    <!-- <img src="images/grafton-hero.webp" alt="City of Grafton"> -->
                     <div class="hero-text">
                         <h2>Welcome to Grafton!</h2>
                         <button>Join the Chamber</button>
@@ -89,14 +96,20 @@
                 </section>
                 <section class="weather home-grid-section">
                     <h3>Grafton Weather</h3>
-                    <div class="weather-day">
-                        <span>Tuesday: </span>
-                        <span>Rain | 45℉</span>
+                    <div class="weather-flex">
+                        <img src="images/weather-cloud-snow.svg" alt="Partly Sunny with Snow">
+                        <div class="weather-temp-wrapper"><span class="weather-temp">-10</span><span>°F</span></div>
                     </div>
-                    <div class="weather-day">
-                        <span>Wednesday: </span>
-                        <span>Partly Sunny | 52℉</span>
+                    <span class="weather-conditions">Partly Sunny with Snow</span>
+                    <div class="weather-wind">
+                        <div>
+                            <span class="wind-speed-label">Wind Speed: </span><span class="wind-speed">4</span><span>mph</span>
+                        </div>
+                        <div>
+                            <span class="wind-chill-label">Wind Chill: </span><span class="wind-chill"></span>
+                        </div>
                     </div>
+
                 </section>
             </div>
         </main>

@@ -33,16 +33,14 @@
     }
     .main-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        grid-auto-columns: 1fr 1fr;
-        gap: 0.625rem;
+        gap: 1rem;
         grid-template-areas:
             "hero hero hero"
             "news news news"
             "spotlight spotlight spotlight"
             "join join join"
             "event event weather";
+        margin: 2rem;
     }
     .hero {
         grid-area: hero;
