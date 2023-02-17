@@ -1,0 +1,10 @@
+body {
+    display: grid;
+}
+img[data-src] {
+    opacity: 0.5;
+}
+img {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
