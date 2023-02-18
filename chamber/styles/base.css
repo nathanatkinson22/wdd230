@@ -271,6 +271,7 @@ button {
 }
 .one-col-upper-flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }

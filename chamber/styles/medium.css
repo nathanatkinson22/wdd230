@@ -60,6 +60,9 @@
     .weather {
         grid-area: weather;
     }
+    .one-col-upper-flex {
+        flex-direction: row;
+    }
     .image-section {
         transition: all 1s ease;
     }
