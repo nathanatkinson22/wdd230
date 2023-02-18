@@ -32,7 +32,6 @@
         font-size: 2rem; 
     }
     .main-grid {
-        max-width: 80rem;
         display: grid;
         grid-auto-columns: 1fr 1fr 1fr;
         grid-template-areas:
@@ -74,6 +73,8 @@
     .weather {
         grid-area: weather;
     }
+
+
     .footer-meta-wrapper {
         flex-direction: row;
     }
