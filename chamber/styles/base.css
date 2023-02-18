@@ -4,6 +4,7 @@
     --secondary-color: #0c49ac;
     --main-font: "Noto Sans", sans-serif;
     --header-font: "Noto Serif", serif;
+    --main-shadow: 0 0.5rem 1rem 0.25rem rgb(208 208 208 / 30%);
 }
 body {
     font-family: var(--main-font);
@@ -268,11 +269,21 @@ button {
     padding: 3rem 1rem;
     gap: 2rem;
 }
+.one-col-upper-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.upper-section {
+    box-shadow: var(--main-shadow);
+    padding: 2rem;
+    border-radius: 1rem;
+}
 .image-section {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    box-shadow: 0 0.5rem 1rem 0.25rem rgb(208 208 208 / 30%);
+    box-shadow: var(--main-shadow);
     border-radius: 1rem;
 }
 .image-section p {
