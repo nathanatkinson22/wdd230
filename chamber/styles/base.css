@@ -125,7 +125,7 @@ nav a:hover::after {
 }
 .social-icons a {
     color: var(--font-color);
-    transition: all ease 200ms;
+    transition: all ease 500ms;
 }
 .social-icons a:hover {
     color: var(--secondary-color);
@@ -151,14 +151,14 @@ nav a:hover::after {
 .navigation .menu-icon {
     display: block;
     padding: 1rem;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 500ms;
 }
 .menu-bar {
     width: 2rem;
     height: 0.25rem;
     background-color: var(--font-color);
     margin: 0.25rem 0;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 500ms;
 }
 .close.menu-icon {
     transform: rotate(180deg);
@@ -233,7 +233,7 @@ button {
     padding: 1rem 2rem;
 }
 .home-grid-section button {
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 500ms;
 }
 .home-grid-section button:hover {
     color: var(--font-color);
@@ -298,6 +298,75 @@ button {
     max-height: 600px;
     opacity: 1;
     transition: opacity 1s ease;
+}
+.join-wrapper {
+    max-width: 100%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+.join-wrapper form {
+    display: flex;
+    flex-direction: column;
+    min-width: 36rem;
+    margin: 0 auto;
+    border: var(--secondary-color) 2px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.join-wrapper label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.join-wrapper input, .join-wrapper textarea, .join-wrapper select {
+    margin: 0.3rem 0;
+}
+.join-wrapper button {
+    align-self: flex-end;
+    transition: all ease 500ms;
+}
+.join-wrapper button:hover {
+    color: var(--font-color);
+    background-color: var(--main-color);
+}
+.join-wrapper table {
+    border: 0;
+    border-spacing: 0;
+}
+.join-wrapper table thead {
+    background-color: var(--secondary-color);
+    color: #FFF;
+}
+.join-wrapper th {
+    padding: 0.5rem;
+}
+.join-wrapper thead tr:first-child {
+    font-size: 1.5rem;
+}
+.join-wrapper tbody tr td {
+    padding: 1rem 0.5rem;
+}
+.join-wrapper tbody tr td:first-child {
+    font-weight: bold;
+}
+.join-wrapper tbody tr:nth-child(even) {
+    background-color: var(--main-color);
+}
+.member-pricing {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+.thankyou-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin: 5rem auto;
 }
 
 footer {

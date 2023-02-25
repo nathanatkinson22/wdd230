@@ -66,4 +66,37 @@ if (!localStorage.lastVisit) {
   localStorage.lastVisitCount = sinceLastVisit.toFixed(0);
   localStorage.lastVisit = today;
 }
-document.querySelector('.last-visits').innerHTML = `It's been ${localStorage.lastVisitCount} days since your last visit.`;
+if(document.querySelector('.last-visits')) {
+    document.querySelector('.last-visits').innerHTML = `It's been ${localStorage.lastVisitCount} days since your last visit.`;
+}
+
+if(document.querySelector('#date-time')) {
+    document.querySelector('#date-time').value = today;
+}
+const windowSearch = window.location.search;
+const urlParams = new URLSearchParams(windowSearch);
+
+if (urlParams.get('first-name')) {
+    let firstName = urlParams.get('first-name');
+    let lastName = urlParams.get('last-name');
+    let positionName = urlParams.get('position');
+    let userEmail = urlParams.get('email');
+    let userCellNum = urlParams.get('cell-num');
+    let businessName = urlParams.get('business-name');
+    let businessDescription = urlParams.get('description');
+    let submitTime = urlParams.get('date-time');
+
+    document.querySelector('.thankyou-wrapper').innerHTML = `
+    <h2>Thanks for your submission!</h2>
+    <p>We will process your application within 4 business days</p>
+    <h3>Your submission:</h3>
+    <ul>
+    <li>Name: ${firstName} ${lastName}</li>
+    <li>Position: ${positionName}</li>
+    <li>Email: ${userEmail}</li>
+    <li>Cell: ${userCellNum}</li>
+    <li>Business Name: ${businessName}</li>
+    <li>Description: ${businessDescription}</li>
+    <li>Submitted: ${submitTime}</li>
+    </ul>`
+}
