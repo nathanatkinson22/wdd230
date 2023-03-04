@@ -73,6 +73,20 @@
     .join-wrapper {
         flex-direction: row;
     }
+    .rows-header {
+        font-weight: bold;
+        background-color: #0c49ac;
+    }
+    .main-rows.directory section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        align-items: center;
+        padding: 1rem;
+    }
+    .rows-header p {
+        color: #FFF;
+    }
 
     .footer-meta-wrapper {
         flex-wrap: wrap;

@@ -368,6 +368,64 @@ button {
     max-width: 30rem;
     margin: 5rem auto;
 }
+.switch-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.main-rows.directory {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    align-items: stretch;
+    max-width: 77.5rem;
+}
+.main-rows.directory section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.main-rows.directory section:nth-of-type(even) {
+    background-color: var(--main-color);
+}
+.main-rows.directory section img, .main-rows .business-description {
+    /* max-height: 3rem; */
+    display: none;
+}
+.main-rows.directory section h2 {
+    font-size: 1.2rem;
+}
+
+.main-grid.directory {
+    grid-auto-columns: minmax(0, 1fr);
+    margin: 2rem;
+}
+.main-rows.directory .rows-header {
+    display: none;
+}
+.main-grid.directory .rows-header {
+    display: none;
+}
+.main-grid.directory section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.625rem;
+}
+.main-grid.main-grid.directory section img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+    max-width: 100%;
+}
+.main-grid.directory section h2 {
+    text-align: center;
+}
 
 footer {
     background-color: var(--main-color);

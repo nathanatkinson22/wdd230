@@ -1,0 +1,114 @@
+{
+    "directory": [
+        {
+            "name": "Grafton Ghost Hunters",
+            "address_street": "25 Cherry Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-224-4678",
+            "website": "https://graftonghosthunters.biz",
+            "logo": "images/grafton-ghost.webp",
+            "membership": "gold",
+            "description": "Grafton Ghost Hunters meets all your ghost-hunting needs, including capturing and removing ghosts from any building or other haunted site. We also offer haunted tours!"
+        },
+        {
+            "name": "Grafton Gold Panning",
+            "address_street": "250 River Road",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-224-4488",
+            "website": "https://graftongoldpanning.com",
+            "logo": "images/gold-panning.webp",
+            "membership": "gold",
+            "description": "Grafton Gold Panning offers hourly gold panning fun for the whole family! Gold guaranteed, keep everything you find!"
+        },
+        {
+            "name": "Red Rock Accountants",
+            "address_street": "13 Main Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-224-2587",
+            "website": "https://redrockaccountants.net",
+            "logo": "images/redrockaccountants.webp",
+            "membership": "gold",
+            "description": "Red Rock Accountants is your premier accounting firm in Grafton, Utah."
+        },
+        {
+            "name": "Grafton Auto",
+            "address_street": "28 Main Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-223-1212",
+            "website": "https://grafton-auto.com",
+            "logo": "images/graftonauto.webp",
+            "membership": "bronze",
+            "description": "Grafton Auto is your premier auto supply store and mechanic shop for all your car needs."
+        },
+        {
+            "name": "Ghost Town Events",
+            "address_street": "550 E Green Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-210-4545",
+            "website": "https://ghosttownevents.net",
+            "logo": "images/ghosttownevents.webp",
+            "membership": "silver",
+            "description": "Ghost Town Events provides materials, setup, activities, and everything in between for all your event needs."
+        },
+        {
+            "name": "McDonalds - Grafton",
+            "address_street": "25 Maple Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-210-6767",
+            "website": "https://mcdonalds.com",
+            "logo": "images/mcdonalds.webp",
+            "membership": "gold",
+            "description": "McDonald's loves Grafton!"
+        },
+        {
+            "name": "Arctic Circle - Grafton",
+            "address_street": "250 Main Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-224-8756",
+            "website": "https://arcticcircle.com",
+            "logo": "images/arcticcircle.webp",
+            "membership": "silver",
+            "description": "Arctic Circle - home of original shakes and the original fry sauce."
+        },
+        {
+            "name": "Red Rock Painting",
+            "address_street": "290 Main Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-850-7654",
+            "website": "https://redrockpainters.com",
+            "logo": "images/redrockpainting.webp",
+            "membership": "bronze",
+            "description": "Red Rock Painting offers painting services for all your house painting needs, both internal painting and outside painting."
+        },
+        {
+            "name": "Ghostly Massage",
+            "address_street": "86 Green Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-267-7324",
+            "website": "https://ghostlymassageparlor.biz",
+            "logo": "images/ghostlymassage.webp",
+            "membership": "silver",
+            "description": "Ghostly Massages offers the best massages this side of Zion National Park."
+        },
+        {
+            "name": "Deadly Gift Shop",
+            "address_street": "150 Main Street",
+            "address_city": "Grafton",
+            "address_state": "UT",
+            "phone_number": "435-222-2222",
+            "website": "https://deadlygifts.com",
+            "logo": "images/deadlygiftshop.webp",
+            "membership": "bronze",
+            "description": "Grafton's Deadliest Gift Shop. We specialize in ghoulish gifts for all the Grafton Ghost Town fans."
+        }
+    ]
+}
