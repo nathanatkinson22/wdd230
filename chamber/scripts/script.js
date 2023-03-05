@@ -102,9 +102,7 @@ if (urlParams.get("first-name")) {
 }
 
 if (window.location.href.indexOf("directory.html") > -1) {
-    // const url = `${window.location.origin}/json/data.json`;
-    // console.log(url)
-    const cardContainer = document.querySelector(".directory");
+
 
     async function getDirectory() {
         const response = await fetch("./json/data.json");
@@ -113,7 +111,7 @@ if (window.location.href.indexOf("directory.html") > -1) {
     }
     getDirectory();
     function buildDirectory(data) {
-
+        const cardContainer = document.querySelector(".directory");
         data.forEach((business) => {
             let card = document.createElement("section");
             let bizName = document.createElement("h2");
@@ -149,10 +147,12 @@ if (window.location.href.indexOf("directory.html") > -1) {
     const gridViewBtn = document.querySelector('#grid-view');
 
     listViewBtn.addEventListener('click', function() {
+        const cardContainer = document.querySelector(".directory");
         cardContainer.classList.remove('main-grid');
         cardContainer.classList.add('main-rows');
     });
     gridViewBtn.addEventListener('click', function() {
+        const cardContainer = document.querySelector(".directory");
         cardContainer.classList.remove('main-rows');
         cardContainer.classList.add('main-grid');
     })
