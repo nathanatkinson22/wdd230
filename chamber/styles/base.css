@@ -426,6 +426,12 @@ button {
 .main-grid.directory section h2 {
     text-align: center;
 }
+.switch-buttons button {
+    padding: 1rem;
+}
+.switch-buttons i {
+    font-size: 2rem;
+}
 
 footer {
     background-color: var(--main-color);
