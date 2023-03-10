@@ -1,0 +1,14 @@
+:root {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure {
+    background-color: cornflowerblue;
+    padding: 1rem;
+}
