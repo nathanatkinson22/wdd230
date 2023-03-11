@@ -163,7 +163,6 @@ const currentTemp = document.querySelector('.weather-temp');
 const weatherIcon = document.querySelector("#weather-icon");
 const weatherConditions = document.querySelector('.weather-conditions');
 const windSpeed = document.querySelector('.wind-speed');
-// const captionDesc = document.querySelector("figcaption");
 
 const url = `https://api.openweathermap.org/data/2.5/weather?q=shunesburg&units=imperial&appid=baab5d803c6942ee7863c1184d688d72`;
 
@@ -173,7 +172,6 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
-            console.log(data);
         } else {
             throw Error(await response.text());
         }
@@ -185,7 +183,6 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherdata) {
-    // console.log(currentTemp)
     currentTemp.innerHTML = `<strong>${weatherdata.main.temp.toFixed(0)}</strong>`;
 
     const iconsrc = `https://openweathermap.com/img/w/${weatherdata.weather[0].icon}.png`;
