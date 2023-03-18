@@ -218,7 +218,7 @@ function displayBusinesses(businessData) {
         if (businessData.directory[listLength].membership == "gold" || businessData.directory[listLength].membership == "silver") {
             let newSpotlight = document.createElement('div');
             newSpotlight.classList.add('spotlight-item');
-            newSpotlight.innerHTML = `<h3>${businessData.directory[listLength].name}</h3><img src="${businessData.directory[listLength].logo}"><p>${businessData.directory[listLength].description}</p>`;
+            newSpotlight.innerHTML = `<h3>${businessData.directory[listLength].name}</h3><img src="${businessData.directory[listLength].logo}" alt="${businessData.directory[listLength].name}"><p>${businessData.directory[listLength].description}</p>`;
             spotlightSection.appendChild(newSpotlight);
             i++;
         }
