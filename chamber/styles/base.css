@@ -303,7 +303,7 @@ button {
 .join-wrapper form {
     display: flex;
     flex-direction: column;
-    min-width: 36rem;
+    max-width: 95%;
     margin: 0 auto;
     border: var(--secondary-color) 2px solid;
     border-radius: 1rem;

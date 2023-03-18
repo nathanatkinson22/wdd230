@@ -72,7 +72,9 @@
     .weather {
         grid-area: weather;
     }
-
+    .join-wrapper form {
+        min-width: 36rem;
+    }
 
     .footer-meta-wrapper {
         flex-direction: row;
