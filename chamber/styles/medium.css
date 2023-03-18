@@ -5,7 +5,7 @@
         padding-bottom: 1rem;
         flex: 1;
     }
-    .header-wrapper {
+    .header-wrapper.flex-column {
         flex-direction: row;
     }
     .navigation {
@@ -25,7 +25,7 @@
         align-self: end;
     }
 
-    .logo-wrapper {
+    .logo-wrapper.flex-column {
         flex-direction: row;
     }
     .header-lower {
@@ -60,7 +60,7 @@
     .weather {
         grid-area: weather;
     }
-    .one-col-upper-flex {
+    .one-col-upper-flex.flex-column {
         flex-direction: row;
     }
     .image-section {
@@ -70,7 +70,7 @@
         opacity: 0.7;
         box-shadow: 0 0.5rem 1rem 0.25rem rgb(208 208 208 / 70%);
     }
-    .join-wrapper {
+    .join-wrapper.flex-column {
         flex-direction: row;
     }
     .rows-header {

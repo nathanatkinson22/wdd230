@@ -2,11 +2,10 @@
     header {
         flex-direction: column;
     }
-    .logo-wrapper {
-        flex-direction: row;
+    .logo-wrapper.flex-column {
         padding: 1rem 0 0 3rem;
     }
-    .navigation {
+    .navigation.flex-column {
         flex-direction: row;
         flex: 1 1 100%;
         margin: 0;

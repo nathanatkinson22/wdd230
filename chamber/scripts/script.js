@@ -102,8 +102,6 @@ if (urlParams.get("first-name")) {
 }
 
 if (window.location.href.indexOf("directory.html") > -1) {
-
-
     async function getDirectory() {
         const response = await fetch("./json/data.json");
         const data = await response.json();
@@ -143,26 +141,25 @@ if (window.location.href.indexOf("directory.html") > -1) {
             cardContainer.appendChild(card);
         });
     }
-    const listViewBtn = document.querySelector('#list-view');
-    const gridViewBtn = document.querySelector('#grid-view');
+    const listViewBtn = document.querySelector("#list-view");
+    const gridViewBtn = document.querySelector("#grid-view");
 
-    listViewBtn.addEventListener('click', function() {
+    listViewBtn.addEventListener("click", function () {
         const cardContainer = document.querySelector(".directory");
-        cardContainer.classList.remove('main-grid');
-        cardContainer.classList.add('main-rows');
+        cardContainer.classList.remove("main-grid");
+        cardContainer.classList.add("main-rows");
     });
-    gridViewBtn.addEventListener('click', function() {
+    gridViewBtn.addEventListener("click", function () {
         const cardContainer = document.querySelector(".directory");
-        cardContainer.classList.remove('main-rows');
-        cardContainer.classList.add('main-grid');
-    })
+        cardContainer.classList.remove("main-rows");
+        cardContainer.classList.add("main-grid");
+    });
 }
 
-
-const currentTemp = document.querySelector('.weather-temp');
+const currentTemp = document.querySelector(".weather-temp");
 const weatherIcon = document.querySelector("#weather-icon");
-const weatherConditions = document.querySelector('.weather-conditions');
-const windSpeed = document.querySelector('.wind-speed');
+const weatherConditions = document.querySelector(".weather-conditions");
+const windSpeed = document.querySelector(".wind-speed");
 
 const url = `https://api.openweathermap.org/data/2.5/weather?q=shunesburg&units=imperial&appid=baab5d803c6942ee7863c1184d688d72`;
 
@@ -172,7 +169,6 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
-            console.log(data);
         } else {
             throw Error(await response.text());
         }
@@ -190,8 +186,41 @@ function displayResults(weatherdata) {
     const desc = weatherdata.weather[0].description;
     let descCaps = desc.charAt(0).toUpperCase() + desc.slice(1);
     const speedData = weatherdata.wind.speed;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', descCaps);
+    weatherIcon.setAttribute("src", iconsrc);
+    weatherIcon.setAttribute("alt", descCaps);
     weatherConditions.textContent = descCaps;
     windSpeed.innerHTML = speedData;
+}
+
+const spotlightSection = document.querySelector(".spotlight");
+
+const jsonFile = "./json/data.json";
+
+async function getBusinesses() {
+    try {
+        const response = await fetch(jsonFile);
+        if (response.ok) {
+            const data = await response.json();
+            displayBusinesses(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+getBusinesses();
+
+function displayBusinesses(businessData) {
+    for (let i = 0; i < 3;) {
+        let listLength = Math.floor(Math.random() * businessData.directory.length);
+        if (businessData.directory[listLength].membership == "gold" || businessData.directory[listLength].membership == "silver") {
+            let newSpotlight = document.createElement('div');
+            newSpotlight.classList.add('spotlight-item');
+            newSpotlight.innerHTML = `<h3>${businessData.directory[listLength].name}</h3><img src="${businessData.directory[listLength].logo}"><p>${businessData.directory[listLength].description}</p>`;
+            spotlightSection.appendChild(newSpotlight);
+            i++;
+        }
+    }
 }

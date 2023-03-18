@@ -54,16 +54,16 @@ header h1 {
     margin: 0;
     font-size: 2rem;
 }
-.header-wrapper {
+.flex-column {
     display: flex;
     flex-direction: column;
+}
+.header-wrapper {
     align-items: center;
     justify-content: space-between;
     text-align: center;
 }
 .logo-wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 1rem;
 }
@@ -78,10 +78,8 @@ header h1 {
     max-width: 9rem;
 }
 .navigation {
-    display: flex;
     align-items: center;
     list-style: none;
-    flex-direction: column;
     padding: 0;
     margin: 0;
     margin-bottom: 2rem;
@@ -213,8 +211,6 @@ button {
 .hero {
     position: relative;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -240,8 +236,6 @@ button {
     background-color: var(--main-color);
 }
 .spotlight {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
 }
 .spotlight-item {
@@ -249,9 +243,10 @@ button {
     border-radius: 0.625rem;
     flex: 1;
 }
+.spotlight-item img {
+    height: 150px;
+}
 .weather-flex {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .weather-flex img {
@@ -263,8 +258,6 @@ button {
 }
 
 .one-col-flex {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -272,8 +265,6 @@ button {
     gap: 2rem;
 }
 .one-col-upper-flex {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
@@ -283,8 +274,6 @@ button {
     border-radius: 1rem;
 }
 .image-section {
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
     box-shadow: var(--main-shadow);
     border-radius: 1rem;
@@ -304,10 +293,13 @@ button {
 .join-wrapper {
     max-width: 100%;
     margin: 3rem;
-    display: flex;
-    flex-direction: column;
+
     gap: 4rem;
     align-items: center;
+}
+.thankyou-wrapper {
+    max-width: 30rem;
+    margin: 5rem auto;
 }
 .join-wrapper form {
     display: flex;
@@ -364,12 +356,7 @@ button {
     background-color: var(--main-color);
     color: var(--secondary-color);
 }
-.thankyou-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 30rem;
-    margin: 5rem auto;
-}
+
 .switch-buttons {
     display: flex;
     gap: 1rem;
@@ -378,8 +365,6 @@ button {
     justify-content: center;
 }
 .main-rows.directory {
-    display: flex;
-    flex-direction: column;
     margin: 2rem auto;
     align-items: stretch;
     max-width: 77.5rem;
@@ -434,6 +419,24 @@ button {
 .switch-buttons i {
     font-size: 2rem;
 }
+.contact-wrapper {
+    margin: 3rem auto;
+}
+.contact-wrapper h2 {
+    text-align: center;
+    margin: 3rem;
+}
+.contact-section {
+    padding: 4rem;
+    background-color: var(--main-color);
+    border: #0c49ac 2px solid;
+    border-radius: 1rem;
+    box-shadow: var(--main-shadow);
+    margin: 3rem 0;
+}
+/* .contact-section h3, .contact-section p, .contact-section a {
+    color: #FFF;
+} */
 
 footer {
     background-color: var(--main-color);

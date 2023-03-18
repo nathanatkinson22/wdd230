@@ -22,13 +22,15 @@
     </head>
     <body>
         <header>
-            <div class="header-wrapper">
-                <div class="logo-wrapper">
-                    <img src="images/grafton-logo.webp" alt="Grafton Chamber of Commerce Logo" class="logo-small" />
-                    <h1>Grafton Chamber of Commerce</h1>
+            <div class="header-wrapper flex-column">
+                <div class="logo-wrapper flex-column">
+                    <a href="/chamber/index.html" class="flex-column logo-wrapper">
+                        <img src="images/grafton-logo.webp" alt="Grafton Chamber of Commerce Logo" class="logo-small" />
+                        <h1>Grafton Chamber of Commerce</h1>
+                    </a>
                 </div>
                 <nav>
-                    <ul class="navigation">
+                    <ul class="navigation flex-column">
                         <li class="menu-icon" onclick="expandMenu(this)">
                             <div class="menu-bar bar-one"></div>
                             <div class="menu-bar bar-two"></div>
@@ -37,7 +39,7 @@
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,7 +54,7 @@
         <main>
             <div class="banner"><p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p></div>
             <div class="main-grid main-content">
-                <section class="hero home-grid-section">
+                <section class="hero home-grid-section flex-column">
                     <!-- <picture>
                         <source media="(min-width: 900px)" srcset="images/wdd230-org-large.webp">
                         <source media="(min-width: 600px)" srcset="images/wdd230-org-medium.webp">
@@ -70,19 +72,8 @@
                     <h4>Ghost Hunters on TV!</h4>
                     <p>The Grafton Ghost Hunters were featured on the hit TV show "Ghost Huntin' in Ghost Towns". Watch on the History Channel to support this spooky local business!</p>
                 </section>
-                <section class="spotlight home-grid-section">
-                    <div class="spotlight-item spotlight-one">
-                        <h3>Grafton Gold Panning</h3>
-                        <p>Come find gold in the middle of Grafton!</p>
-                    </div>
-                    <div class="spotlight-item spotlight-two">
-                        <h3>Ghost Hunters</h3>
-                        <p>We'll help those pioneer ghosts carry on</p>
-                    </div>
-                    <div class="spotlight-item spotlight-three">
-                        <h3>Red Rock Accountants</h3>
-                        <p>Taxes and business accounting solutions</p>
-                    </div>
+                <section class="spotlight home-grid-section flex-column">
+
                 </section>
                 <section class="join home-grid-section">
                     <h3>Join the Grafton Chamber of Commerce!</h3>
@@ -96,7 +87,7 @@
                 </section>
                 <section class="weather home-grid-section">
                     <h3>Grafton Weather</h3>
-                    <div class="weather-flex">
+                    <div class="weather-flex flex-column">
                         <img id="weather-icon" src="images/772.gif" alt="">
                         <span class="weather-conditions"></span>
                         <div class="weather-temp-wrapper"><span class="weather-temp"></span><span>°F</span></div>
