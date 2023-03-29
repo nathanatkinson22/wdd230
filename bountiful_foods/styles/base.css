@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #82bc24;
+    --secondary-color: #1982c4;
+    --font-color: #042a2b;
+    --accent-one: #ffca3a;
+    --accent-two: #6a4c93;
+    --body-font: 'Poppins', sans-serif;
+    --header-font: 'Alfa Slab One', cursive;
+    font-size: 10px;
+}
+body {
+    /* font-size: 10px; */
+    font-family: var(--body-font);
+    color: var(--font-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font);
+    color: var(--font-color);
+}
+h1 {
+    font-size: 5rem;
+    letter-spacing: 1.6rem;
+}
+h2 {
+    font-size: 4rem;
+    letter-spacing: 0.6rem;
+}
+h3 {
+    font-size: 3.6rem;
+}
+h4 {
+    font-size: 3rem;
+}
+p {
+    font-size: 1.6rem;
+}
+header {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.25);
+}
+
+nav ul {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 2rem;
+    /* transition: all ease-in-out 300ms; */
+}
+
+nav ul a {
+    color: var(--font-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: 500ms ease-in-out all;
+    border-bottom: 4px solid transparent;
+}
+
+nav ul a:hover {
+    border-bottom: 4px solid var(--primary-color);
+}
+nav ul li a img {
+    height: 12.5rem;
+    border-radius: 50%;
+    transition: all ease-in-out 300ms;
+}
+nav ul li a.logo-img-link {
+    background: none;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+nav ul li a.logo-img-link:hover {
+    background: none;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.8rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.social-icons li {
+    transition: 500ms ease-in-out all;
+}
+.social-icons li:hover {
+    opacity: 0.7;
+}
+.social-icons img {
+    height: 3rem;
+}
+main {
+    width: 100%;
+}
+
+.section-wide {
+    background-image: url(/bountiful_foods/images/placeholder.webp);
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    height: 100dvh;
+    background-size: cover;
+}
+.section-fresh.visible {
+    background-image: url(/bountiful_foods/images/fresh-fruit.webp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-fresh h1 {
+    font-size: 8rem;
+    color: white;
+}
+.section-fresh button {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.section-contact.visible {
+    background-image: url(/bountiful_foods/images/field.webp);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-position: bottom;
+}
+.contact-wrapper {
+    margin: 2rem 5rem;
+    padding: 2rem;
+    background-color: rgb(131 188 36 / 70%);
+    border-radius: 2rem;
+}
+.contact-wrapper h2 {
+    margin: 0 3rem 3rem;
+    font-size: 6rem;
+}
+.contact-wrapper ul {
+    margin-left: 3rem;
+}
+.contact-wrapper ul li:first-child::marker {
+    content: '🍓';
+}
+.contact-wrapper ul li:nth-child(2)::marker {
+    content: '🍇';
+}
+.contact-wrapper ul li:nth-child(3)::marker {
+    content: '🍊';
+}
+.contact-wrapper ul li {
+    font-size: 2.4rem;
+    padding: 0.6rem 1rem;
+}
+.section-visit.visible {
+    background-image: url(/bountiful_foods/images/beach.webp);
+    display: flex;
+    justify-content: flex-start;
+    background-position: bottom;
+    align-items: center;
+}
+.visit-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    /* margin-right: 5rem; */
+    padding: 2rem;
+    background-color: rgb(25 131 196 / 70%);
+    margin: 2rem 5rem;
+    border-radius: 2rem;
+}
+.visit-wrapper h2 {
+    font-size: 6rem;
+    margin: 0 0 2rem 0;
+
+}
+.visit-wrapper h3 {
+    margin: 1rem 0;
+}
