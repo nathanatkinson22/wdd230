@@ -19,7 +19,7 @@
             <nav>
                 <ul>
                     <li class="nav-grid-one">
-                        <a href="index.html" class="logo-img-link"><img src="images/bountiful-foods-logo.png" alt="Bountiful Foods Logo" class="nav-logo-img"/></a>
+                        <a href="index.html" class="logo-img-link" title="Bountiful Foods Home"><img src="images/bountiful-foods-logo.png" alt="Bountiful Foods Logo" class="nav-logo-img"/></a>
                     </li>
                     <li class="nav-grid-two"><a href="fresh.html">Order Fresh</a></li>
                     <li class="nav-grid-three"><a href="about.html">About Us</a></li>
@@ -40,20 +40,23 @@
         <main>
             <section class="section-wide section-fresh">
                 <h1>Fresh</h1>
-                <button>Order Now</button>
+                <a href="fresh.html">Order Now</a>
+                <div class="drink-wrapper">
+                    <span class="drink-orders">You have ordered <span id="drink-count">0</span> drinks. Why not order another?</span>
+                </div>
             </section>
             <section class="section-wide section-contact">
-                <div class="contact-wrapper">
+                <div class="contact-wrapper section-wrapper">
                     <h2>Contact Us</h2>
                     <ul>
-                        <li>555-555-5555</li>
-                        <li>hello@bountifulfoods.com</li>
-                        <li>450 S Cherry St Carlsbad, CA</li>
+                        <li><a href="tel:+17604311061">760-431-1061</a></li>
+                        <li><a href="mailto:hello@bountifulfoodsca.com">hello@bountifulfoodsca.com</a></li>
+                        <li>7141 Avenida Encinas Carlsbad, CA</li>
                     </ul>
                 </div>
             </section>
             <section class="section-wide section-visit">
-                <div class="visit-wrapper">
+                <div class="visit-wrapper section-wrapper">
                     <h2>Visit</h2>
                     <h3>Beautiful Southern California</h3>
                     <h3>Santa Barbara</h3>
@@ -63,33 +66,31 @@
                     </p>
                 </div>
             </section>
-            <section>
-                <div>
-                    <h2>Weather: Carlsbad, CA</h2>
-                    <span id="weather-temp">60F</span>
-                    <img src="" alt="" id="weather-icon"/>
-                    <span><span id="weather-humidity"></span> humidity</span>
-                    <div id="weather-three-day">
+            <section class="section-wide section-weather">
+                <div class="weather-section-wrapper section-wrapper">
+                    <h2>Weather</h2>
+                    <div class="weather-location">Carlsbad, CA</div>
+                    <div class="weather-wrapper">
+                        <span class="temp-wrapper"><span id="weather-temp"></span><span>℉</span></span>
+                        <img src="" alt="" id="weather-icon"/>
+                        <span id="weather-conditions"></span>
+                        <span><span id="weather-humidity"></span> humidity</span>
+                    </div>
+                    <div class="weather-forecast">
                         <h3>3-Day Forecast</h3>
-                        <span>
-                            <img src="" alt="" />
-                            <span>60F</span>
-                            <span>Sunshine</span>
-                        </span>
+                        <div id="weather-three-day">
+
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
+        <footer>
+            <div><img src="images/bountiful-foods-logo.png" alt="Bountiful Foods Logo" class="nav-logo-img" /></div>
+            <div class="footer-bottom">
+                <div id="copyright"></div>
+                <div id="last-updated"></div>
+            </div>
+        </footer>
     </body>
 </html>
-
-<!-- Readily available navigation and business contact information.
-Summary information about any coastal area or areas in the southern California coast of your choosing.
-A call to action to make your own fruit drink mix. This link can link to the 📄Fresh page.
-Social media links (at least three) (no account necessary).
-The weather card(s) must summarize the current weather conditions for Carlsbad. Use the OpenWeatherMap APIs (weather, forecast/daily) and include:
-the current temperature,
-the condition description,
-the humidity, and
-a three(3) day temperature forecast.
-Include an information card about the total number of specialty drinks that the current user has submitted from the Fresh page form. This information should just be stored locally, with the user's agent (in their browser). -->

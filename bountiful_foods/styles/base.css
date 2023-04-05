@@ -4,8 +4,8 @@
     --font-color: #042a2b;
     --accent-one: #ffca3a;
     --accent-two: #6a4c93;
-    --body-font: 'Poppins', sans-serif;
-    --header-font: 'Alfa Slab One', cursive;
+    --body-font: "Poppins", sans-serif;
+    --header-font: "Alfa Slab One", cursive;
     font-size: 10px;
 }
 body {
@@ -13,9 +13,15 @@ body {
     font-family: var(--body-font);
     color: var(--font-color);
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--header-font);
     color: var(--font-color);
+    margin: 2rem 0;
 }
 h1 {
     font-size: 5rem;
@@ -26,10 +32,13 @@ h2 {
     letter-spacing: 0.6rem;
 }
 h3 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
+    letter-spacing: 0.6rem;
 }
 h4 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.6rem;
+
 }
 p {
     font-size: 1.6rem;
@@ -44,7 +53,7 @@ header {
     padding-bottom: 2rem;
     position: sticky;
     top: 0;
-    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
 nav ul {
@@ -56,11 +65,10 @@ nav ul {
     gap: 2rem;
     list-style: none;
     font-size: 2rem;
-    /* transition: all ease-in-out 300ms; */
 }
 
 nav ul a {
-    color: var(--font-color);
+    color: white;
     padding: 1rem 2rem;
     text-decoration: none;
     transition: 500ms ease-in-out all;
@@ -114,6 +122,10 @@ main {
     height: 100dvh;
     background-size: cover;
 }
+.section-wrapper {
+    padding: 3.2rem;
+    border-radius: 2rem;
+}
 .section-fresh.visible {
     background-image: url(/bountiful_foods/images/fresh-fruit.webp);
     display: flex;
@@ -125,42 +137,68 @@ main {
     font-size: 8rem;
     color: white;
 }
-.section-fresh button {
+.section-fresh a,
+#order-btn {
     font-size: 2rem;
     padding: 2rem 3rem;
     background-color: var(--secondary-color);
     color: white;
-    border: 0;
+    border: 4px solid var(--primary-color);
     cursor: pointer;
+    transition: 500ms all cubic-bezier(0.52, -0.57, 0.39, 1.99);
+    font-weight: bold;
+    text-decoration: none;
+}
+.section-fresh a:hover,
+#order-btn:hover {
+    background-color: var(--primary-color);
+    border: 4px solid var(--secondary-color);
+    color: var(--font-color);
+}
+.drink-wrapper {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: var(--accent-one);
+}
+.drink-orders {
+    font-size: 2rem;
+}
+#drink-count {
+    font-family: var(--header-font);
 }
 .section-contact.visible {
-    background-image: url(/bountiful_foods/images/field.webp);
+    background-image: url(/bountiful_foods/images/berries.webp);
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     background-position: bottom;
 }
 .contact-wrapper {
-    margin: 2rem 5rem;
-    padding: 2rem;
+    margin: 2rem auto;
     background-color: rgb(131 188 36 / 70%);
-    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .contact-wrapper h2 {
     margin: 0 3rem 3rem;
     font-size: 6rem;
 }
 .contact-wrapper ul {
-    margin-left: 3rem;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+.contact-wrapper a {
+    color: var(--font-color);
 }
 .contact-wrapper ul li:first-child::marker {
-    content: '🍓';
+    content: "🍓";
 }
 .contact-wrapper ul li:nth-child(2)::marker {
-    content: '🍇';
+    content: "🍇";
 }
 .contact-wrapper ul li:nth-child(3)::marker {
-    content: '🍊';
+    content: "🍊";
 }
 .contact-wrapper ul li {
     font-size: 2.4rem;
@@ -177,17 +215,182 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 50rem;
-    /* margin-right: 5rem; */
-    padding: 2rem;
     background-color: rgb(25 131 196 / 70%);
     margin: 2rem 5rem;
-    border-radius: 2rem;
 }
 .visit-wrapper h2 {
     font-size: 6rem;
     margin: 0 0 2rem 0;
-
 }
 .visit-wrapper h3 {
     margin: 1rem 0;
+}
+.section-weather.visible {
+    background-image: url(/bountiful_foods/images/field.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60rem;
+}
+.weather-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255 202 58 / 70%);
+    max-width: 50rem;
+}
+.weather-section-wrapper span {
+    font-size: 1.6rem;
+}
+.section-weather h2 {
+    font-size: 6rem;
+    margin: 0 0 2rem 0;
+}
+.weather-location {
+    font-size: 3rem;
+}
+.weather-wrapper,
+.weather-forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.temp-wrapper {
+    font-size: 2rem;
+}
+#weather-icon {
+    height: 7rem;
+}
+
+#weather-three-day {
+    display: flex;
+}
+.three-day-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.weather-date {
+    font-family: var(--header-font);
+    border-bottom: 2px solid var(--font-color);
+}
+.contact-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 124rem;
+    margin: 3rem auto;
+}
+.contact-page-wrapper div,
+.contact-page-wrapper section {
+    max-width: 100%;
+}
+.contact-header {
+    text-align: center;
+}
+.contact-page-wrapper section {
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+.contact-section {
+    font-size: 1.6rem;
+    background-color: var(--accent-two);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.contact-section h2 {
+    text-align: center;
+}
+.contact-section h2,
+.contact-section h3,
+.contact-section span,
+.contact-section p,
+.contact-section a {
+    color: #fff;
+}
+.contact-address,
+.contact-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.contact-visit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-story {
+    background-color: var(--primary-color);
+}
+.about-history {
+    background-color: var(--accent-one);
+}
+.fresh-form-wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#fresh-order {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    padding: 1.6rem;
+}
+#fresh-order label {
+    padding: 0.5rem 0;
+}
+#fresh-order input,
+#fresh-order select,
+#fresh-order textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+#fresh-order input:invalid,
+#fresh-order select:invalid {
+    border: 2px solid red;
+}
+#order-btn {
+    margin: 1rem 0;
+    align-self: flex-end;
+}
+#fresh-output {
+    visibility: hidden;
+    max-width: 80rem;
+    margin: 4rem auto;
+    border-radius: 2rem;
+    padding: 4rem;
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+footer img {
+    height: 8rem;
+    border: 4px solid var(--secondary-color);
+    border-radius: 50%;
+}
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
 }

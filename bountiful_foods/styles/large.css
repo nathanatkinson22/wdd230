@@ -32,4 +32,34 @@
     .section-wide h2 {
         font-size: 8rem;
     }
+    .section-contact.visible {
+        justify-content: flex-end;
+    }
+    .contact-wrapper {
+        margin: 2rem 5rem;
+    }
+    .contact-wrapper ul {
+        margin-left: 3rem;
+    }
+    .contact-page-wrapper section {
+        padding: 4rem;
+    }
+    .contact-page-wrapper div, .contact-page-wrapper section {
+        width: 100%;
+    }
+    .contact-section {
+        max-width: 80rem;
+        background-color: var(--accent-two);
+        border-radius: 2rem;
+        padding: 4rem;
+    }
+    .contact-address, .contact-email {
+        font-size: 2rem;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
 }

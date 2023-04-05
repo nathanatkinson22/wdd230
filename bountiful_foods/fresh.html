@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Order Fresh -- Bountiful Foods</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/large.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+        <script src="scripts/script.js" defer></script>
+        <script src="scripts/fresh.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="nav-grid-one">
+                        <a href="index.html" class="logo-img-link" title="Bountiful Foods Home">
+                            <img src="images/bountiful-foods-logo.png" alt="Bountiful Foods Logo" class="nav-logo-img" />
+                        </a>
+                    </li>
+                    <li class="nav-grid-two"><a href="fresh.html">Order Fresh</a></li>
+                    <li class="nav-grid-three"><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://instagram.com" title="Instagram"><img src="images/instagram.png" alt="Instagram Logo" /></a>
+                </li>
+                <li>
+                    <a href="https://facebook.com" title="Facebook"><img src="images/facebook.png" alt="Facebook Logo" /></a>
+                </li>
+                <li>
+                    <a href="https://tiktok.com" title="TikTok"><img src="images/tiktok.png" alt="TikTok Logo" /></a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="fresh-form-wrapper">
+                <h1>Order Fresh Drinks</h1>
+                <form id="fresh-order">
+                    <h2>Order Here:</h2>
+                    <p>Please complete all fields so we can get the goodness to you even faster</p>
+                    <label for="first-name">*First Name:</label>
+                    <input type="text" name="first-name" id="first-name" required/>
+                    <label for="email">*Email:</label>
+                    <input type="email" name="email" id="email" required/>
+                    <label for="phone">*Phone:</label>
+                    <input type="tel" name="phone" id="phone" required/>
+                    <label for="fruit-one">*Select a fruit:</label>
+                    <select name="fruit-one" id="fruit-one" required></select>
+                    <label for="fruit-two">*Select a fruit:</label>
+                    <select name="fruit-two" id="fruit-two" required></select>
+                    <label for="fruit-three">*Select a fruit:</label>
+                    <select name="fruit-three" id="fruit-three" required></select>
+                    <label for="requests">Any special requests?</label>
+                    <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+                    <button id="order-btn">Give me the fresh!</button>
+                </form>
+            </div>
+            <div id="fresh-output">
+                <h3>Your order details:</h3>
+            </div>
+        </main>
+        <footer>
+            <div><img src="images/bountiful-foods-logo.png" alt="Bountiful Foods Logo" class="nav-logo-img" /></div>
+            <div class="footer-bottom">
+                <div id="copyright"></div>
+                <div id="last-updated"></div>
+            </div>
+        </footer>
+    </body>
+</html>
