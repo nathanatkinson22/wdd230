@@ -114,7 +114,7 @@ main {
 }
 
 .section-wide {
-    background-image: url(/bountiful_foods/images/placeholder.webp);
+    background-image: url(../images/placeholder.webp);
     width: 100%;
     margin: 0;
     height: 100vh;
@@ -126,7 +126,7 @@ main {
     border-radius: 2rem;
 }
 .section-fresh.visible {
-    background-image: url(/bountiful_foods/images/fresh-fruit.webp);
+    background-image: url(../images/fresh-fruit.webp);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +167,7 @@ main {
     font-family: var(--header-font);
 }
 .section-contact.visible {
-    background-image: url(/bountiful_foods/images/berries.webp);
+    background-image: url(../images/berries.webp);
     display: flex;
     align-items: center;
     background-position: bottom;
@@ -204,7 +204,7 @@ main {
     padding: 0.6rem 1rem;
 }
 .section-visit.visible {
-    background-image: url(/bountiful_foods/images/beach.webp);
+    background-image: url(../images/beach.webp);
     display: flex;
     justify-content: flex-start;
     background-position: bottom;
@@ -225,7 +225,7 @@ main {
     margin: 1rem 0;
 }
 .section-weather.visible {
-    background-image: url(/bountiful_foods/images/field.webp);
+    background-image: url(../images/field.webp);
     display: flex;
     justify-content: center;
     align-items: center;
